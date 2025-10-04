@@ -1,0 +1,2 @@
+/usr/bin/x86_64-w64-mingw32-ar qc libimgui.a CMakeFiles/imgui.dir/include/imgui/imgui.cpp.obj CMakeFiles/imgui.dir/include/imgui/imgui_demo.cpp.obj CMakeFiles/imgui.dir/include/imgui/imgui_draw.cpp.obj CMakeFiles/imgui.dir/include/imgui/imgui_tables.cpp.obj CMakeFiles/imgui.dir/include/imgui/imgui_widgets.cpp.obj CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_glfw.cpp.obj CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_opengl3.cpp.obj
+/usr/bin/x86_64-w64-mingw32-ranlib libimgui.a
