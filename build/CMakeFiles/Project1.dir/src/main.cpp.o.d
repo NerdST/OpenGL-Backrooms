@@ -382,6 +382,9 @@ CMakeFiles/Project1.dir/src/main.cpp.o: \
  /usr/include/c++/13/pstl/execution_defs.h \
  /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/FrustumCuller.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/Player.h \
+ /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/camera.h \
+ /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/MazeGenerator.h \
  /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui.h \
  /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imconfig.h \
  /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends/imgui_impl_glfw.h \

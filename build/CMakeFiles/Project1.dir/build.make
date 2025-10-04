@@ -181,6 +181,20 @@ CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/OcclusionCuller.cpp -o CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.s
 
+CMakeFiles/Project1.dir/src/Player.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/src/Player.cpp.o: /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Player.cpp
+CMakeFiles/Project1.dir/src/Player.cpp.o: CMakeFiles/Project1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project1.dir/src/Player.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project1.dir/src/Player.cpp.o -MF CMakeFiles/Project1.dir/src/Player.cpp.o.d -o CMakeFiles/Project1.dir/src/Player.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Player.cpp
+
+CMakeFiles/Project1.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Project1.dir/src/Player.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Player.cpp > CMakeFiles/Project1.dir/src/Player.cpp.i
+
+CMakeFiles/Project1.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/src/Player.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Player.cpp -o CMakeFiles/Project1.dir/src/Player.cpp.s
+
 # Object files for target Project1
 Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/src/main.cpp.o" \
@@ -190,7 +204,8 @@ Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/src/Primitives.cpp.o" \
 "CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o" \
 "CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o" \
-"CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o"
+"CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o" \
+"CMakeFiles/Project1.dir/src/Player.cpp.o"
 
 # External object files for target Project1
 Project1_EXTERNAL_OBJECTS =
@@ -203,13 +218,14 @@ bin/Project1: CMakeFiles/Project1.dir/src/Primitives.cpp.o
 bin/Project1: CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o
 bin/Project1: CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o
 bin/Project1: CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o
+bin/Project1: CMakeFiles/Project1.dir/src/Player.cpp.o
 bin/Project1: CMakeFiles/Project1.dir/build.make
 bin/Project1: libglad.a
 bin/Project1: libimgui.a
 bin/Project1: /usr/lib/x86_64-linux-gnu/libGL.so
 bin/Project1: libglad.a
 bin/Project1: CMakeFiles/Project1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bin/Project1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/Project1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy_directory /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/data /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/bin/data
 

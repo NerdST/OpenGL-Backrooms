@@ -11,6 +11,7 @@
 #include "Primitives.h"
 #include "MazeGenerator.h"
 #include "FrustumCuller.h"
+#include "Player.h"
 
 // ImGui includes
 #include "imgui/imgui.h"
@@ -91,6 +92,9 @@ bool enableFrustumCulling = true;
 int cellsRendered = 0;
 int cellsCulled = 0;
 
+// Player system
+std::unique_ptr<Player> player;
+
 int main()
 {
     glfwInit();
@@ -154,6 +158,12 @@ int main()
     MazeGenerator maze(75, 75, 12345);
     maze.generateMaze();
 
+    // Initialize player controller
+    player = std::make_unique<Player>(&camera, glm::vec3(50.0f, 0.1f, 50.0f));
+
+    // Ensure camera and player are synced initially
+    camera.Position = player->GetCameraPosition();
+
     std::cout << "Generated maze with " << maze.getWidth() << "x" << maze.getHeight() << " cells" << std::endl;
 
     // Render loop
@@ -164,6 +174,10 @@ int main()
         lastFrame = currentFrame;
 
         processInput(window);
+
+        // Update player (handles physics, collision, camera positioning)
+        player->Update(deltaTime, maze);
+
         renderUI(camera, maze, window);
 
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -362,20 +376,42 @@ void renderMaze(const MazeGenerator &maze, Shader &shader, Shader &lightShader, 
 
 void processInput(GLFWwindow *window)
 {
-    float speed = 5.0f;
+    bool isRunning = glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS;
 
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime * speed);
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime * speed);
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime * speed);
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime * speed);
-    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
-        camera.ProcessKeyboard(UP, deltaTime * speed);
-    if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
-        camera.ProcessKeyboard(DOWN, deltaTime * speed);
+    // Collect all movement inputs
+    bool wPressed = glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS;
+    bool sPressed = glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS;
+    bool aPressed = glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS;
+    bool dPressed = glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS;
+    bool spacePressed = glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS;
+
+    bool anyMovementKey = wPressed || sPressed || aPressed || dPressed;
+
+    if (player->godMode)
+    {
+        // God mode: use original camera movement for each key
+        if (wPressed)
+            camera.ProcessKeyboard(FORWARD, deltaTime * 5.0f);
+        if (sPressed)
+            camera.ProcessKeyboard(BACKWARD, deltaTime * 5.0f);
+        if (aPressed)
+            camera.ProcessKeyboard(LEFT, deltaTime * 5.0f);
+        if (dPressed)
+            camera.ProcessKeyboard(RIGHT, deltaTime * 5.0f);
+        if (spacePressed)
+            camera.ProcessKeyboard(UP, deltaTime * 5.0f);
+
+        // In god mode, Shift alone (without other keys) moves down
+        if (isRunning && !anyMovementKey && !spacePressed)
+        {
+            camera.ProcessKeyboard(DOWN, deltaTime * 5.0f);
+        }
+    }
+    else
+    {
+        // Player mode: accumulate movement directions
+        player->ProcessCombinedMovement(wPressed, sPressed, aPressed, dPressed, spacePressed, deltaTime, isRunning);
+    }
 }
 
 void framebuffer_size_callback(GLFWwindow *, int width, int height)
@@ -446,6 +482,11 @@ void key_callback(GLFWwindow *window, int key, int, int action, int)
     {
         toggleFullscreen(window);
         std::cout << "Display mode: " << (isFullscreen ? "FULLSCREEN" : "WINDOWED") << std::endl;
+    }
+
+    if (key == GLFW_KEY_G && action == GLFW_PRESS)
+    {
+        player->ToggleGodMode();
     }
 }
 
@@ -520,13 +561,62 @@ void renderUI(const Camera &camera, MazeGenerator &maze, GLFWwindow *window)
 
     ImGui::Text("Camera Position: %.1f, %.1f, %.1f", camera.Position.x, camera.Position.y, camera.Position.z);
     ImGui::Text("Camera Direction: %.2f, %.2f, %.2f", camera.Front.x, camera.Front.y, camera.Front.z);
+
+    // Add grid position info for debugging collision
+    int gridX = (int)floor(camera.Position.x / 2.0f + 0.5f);
+    int gridZ = (int)floor(camera.Position.z / 2.0f + 0.5f);
+    ImGui::Text("Grid Position: (%d, %d)", gridX, gridZ);
+
     ImGui::Text("Looking: %s",
                 (abs(camera.Front.z) > abs(camera.Front.x)) ? (camera.Front.z > 0 ? "North (+Z)" : "South (-Z)") : (camera.Front.x > 0 ? "East (+X)" : "West (-X)"));
     ImGui::Text("Press ALT to toggle mouse");
     ImGui::Text("Use WASD to move, Space/Shift for up/down");
     ImGui::Text("Press F to toggle flashlight");
     ImGui::Text("Press C to toggle frustum culling");
+    ImGui::Text("Press G to toggle God Mode");
     ImGui::Text("Press F11 to toggle fullscreen");
+    ImGui::Separator();
+
+    // Player Mode Information
+    ImGui::Text("Movement Mode:");
+    if (player->godMode)
+    {
+        ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "God Mode (Fly Camera)");
+        ImGui::Text("  - No collision detection");
+        ImGui::Text("  - Free flight in all directions");
+        ImGui::Text("  - Hold Shift + Space/WASD for up/down");
+    }
+    else
+    {
+        ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.0f, 1.0f), "Player Mode (Physics)");
+        ImGui::Text("  - Collision detection enabled");
+        ImGui::Text("  - Gravity and ground physics");
+        ImGui::Text("  - Hold Shift to run, Space to jump");
+        ImGui::Text("  - Player Height: %.1fm", player->position.y + player->eyeHeight);
+        ImGui::Text("  - Player Position: %.1f, %.1f, %.1f", player->position.x, player->position.y, player->position.z);
+        ImGui::Text("  - %s", player->isGrounded ? "On Ground" : "In Air");
+
+        // Show if player is colliding with walls
+        bool colliding = player->CheckCollision(player->position, maze);
+        ImGui::Text("  - Collision: %s", colliding ? "YES" : "NO");
+
+        // Debug: Show grid coordinates
+        const float CELL_SIZE = 2.0f; // Same as in renderMaze
+        int gridX = static_cast<int>(floor(player->position.x / CELL_SIZE + 0.5f));
+        int gridZ = static_cast<int>(floor(player->position.z / CELL_SIZE + 0.5f));
+        ImGui::Text("  - Grid Position: (%d, %d)", gridX, gridZ);
+
+        // Show if current grid cell is a wall
+        if (gridX >= 0 && gridX < maze.getWidth() && gridZ >= 0 && gridZ < maze.getHeight())
+        {
+            bool isWall = maze.isWall(gridX, gridZ);
+            ImGui::Text("  - Current Cell: %s", isWall ? "WALL" : "Open");
+        }
+        else
+        {
+            ImGui::Text("  - Current Cell: Out of bounds");
+        }
+    }
     ImGui::Separator();
 
     // Culling Statistics

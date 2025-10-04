@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project1.dir/src/Mesh.cpp.o.d"
   "CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o"
   "CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o.d"
+  "CMakeFiles/Project1.dir/src/Player.cpp.o"
+  "CMakeFiles/Project1.dir/src/Player.cpp.o.d"
   "CMakeFiles/Project1.dir/src/Primitives.cpp.o"
   "CMakeFiles/Project1.dir/src/Primitives.cpp.o.d"
   "CMakeFiles/Project1.dir/src/TextureManager.cpp.o"
