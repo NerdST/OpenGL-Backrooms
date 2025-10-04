@@ -1,0 +1,5 @@
+/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles/glad.dir
+/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles/imgui.dir
+/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles/Project1.dir
+/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles/edit_cache.dir
+/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build/CMakeFiles/rebuild_cache.dir

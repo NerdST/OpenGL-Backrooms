@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Project1.dir/src/main.cpp.o CMakeFiles/Project1.dir/src/stb_image.cpp.o CMakeFiles/Project1.dir/src/Mesh.cpp.o CMakeFiles/Project1.dir/src/TextureManager.cpp.o CMakeFiles/Project1.dir/src/Primitives.cpp.o CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o -o bin/Project1  libglad.a libimgui.a /usr/lib/x86_64-linux-gnu/libGL.so -lglfw -ldl libglad.a 

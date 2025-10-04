@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/gcc  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -o CMakeFiles/glad.dir/include/glad/src/glad.c.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/src/glad.c",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/src/glad.c",
+  "output": "CMakeFiles/glad.dir/include/glad/src/glad.c.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/imgui.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/imgui_demo.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_demo.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/imgui_draw.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_draw.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/imgui_tables.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_tables.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/imgui_widgets.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_widgets.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_glfw.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -g -std=gnu++17 -o CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/imgui.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/main.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/main.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/main.cpp",
+  "output": "CMakeFiles/Project1.dir/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/stb_image.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/stb_image.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/stb_image.cpp",
+  "output": "CMakeFiles/Project1.dir/src/stb_image.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/Mesh.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Mesh.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Mesh.cpp",
+  "output": "CMakeFiles/Project1.dir/src/Mesh.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/TextureManager.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/TextureManager.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/TextureManager.cpp",
+  "output": "CMakeFiles/Project1.dir/src/TextureManager.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/Primitives.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Primitives.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/Primitives.cpp",
+  "output": "CMakeFiles/Project1.dir/src/Primitives.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/MazeGenerator.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/MazeGenerator.cpp",
+  "output": "CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o"
+}
+]
