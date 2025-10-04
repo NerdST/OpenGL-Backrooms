@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o"
+  "CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o.d"
   "CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o"
   "CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o.d"
   "CMakeFiles/Project1.dir/src/Mesh.cpp.o"
   "CMakeFiles/Project1.dir/src/Mesh.cpp.o.d"
+  "CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o"
+  "CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o.d"
   "CMakeFiles/Project1.dir/src/Primitives.cpp.o"
   "CMakeFiles/Project1.dir/src/Primitives.cpp.o.d"
   "CMakeFiles/Project1.dir/src/TextureManager.cpp.o"

@@ -30,6 +30,8 @@ add_executable(Project1
     src/TextureManager.cpp
     src/Primitives.cpp
     src/MazeGenerator.cpp
+    src/FrustumCuller.cpp
+    src/OcclusionCuller.cpp
 )
 target_include_directories(Project1 PRIVATE include)
 

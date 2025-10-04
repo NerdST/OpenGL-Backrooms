@@ -82,5 +82,17 @@
   "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/MazeGenerator.cpp",
   "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/MazeGenerator.cpp",
   "output": "CMakeFiles/Project1.dir/src/MazeGenerator.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/FrustumCuller.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/FrustumCuller.cpp",
+  "output": "CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o"
+},
+{
+  "directory": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/build",
+  "command": "/usr/bin/g++  -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/glad/include -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui -I/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/include/imgui/backends -g -std=gnu++17 -Wall -Wextra -o CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o -c /mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/OcclusionCuller.cpp",
+  "file": "/mnt/shared/sangeeth/Documents/RPI/Semester7/GSAS-4530/Projects/Project1/src/OcclusionCuller.cpp",
+  "output": "CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o"
 }
 ]

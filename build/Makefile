@@ -347,6 +347,30 @@ include/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/include/imgui/imgui_widgets.cpp.s
 .PHONY : include/imgui/imgui_widgets.cpp.s
 
+src/FrustumCuller.o: src/FrustumCuller.cpp.o
+.PHONY : src/FrustumCuller.o
+
+# target to build an object file
+src/FrustumCuller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/FrustumCuller.cpp.o
+.PHONY : src/FrustumCuller.cpp.o
+
+src/FrustumCuller.i: src/FrustumCuller.cpp.i
+.PHONY : src/FrustumCuller.i
+
+# target to preprocess a source file
+src/FrustumCuller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/FrustumCuller.cpp.i
+.PHONY : src/FrustumCuller.cpp.i
+
+src/FrustumCuller.s: src/FrustumCuller.cpp.s
+.PHONY : src/FrustumCuller.s
+
+# target to generate assembly for a file
+src/FrustumCuller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/FrustumCuller.cpp.s
+.PHONY : src/FrustumCuller.cpp.s
+
 src/MazeGenerator.o: src/MazeGenerator.cpp.o
 .PHONY : src/MazeGenerator.o
 
@@ -394,6 +418,30 @@ src/Mesh.s: src/Mesh.cpp.s
 src/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/Mesh.cpp.s
 .PHONY : src/Mesh.cpp.s
+
+src/OcclusionCuller.o: src/OcclusionCuller.cpp.o
+.PHONY : src/OcclusionCuller.o
+
+# target to build an object file
+src/OcclusionCuller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.o
+.PHONY : src/OcclusionCuller.cpp.o
+
+src/OcclusionCuller.i: src/OcclusionCuller.cpp.i
+.PHONY : src/OcclusionCuller.i
+
+# target to preprocess a source file
+src/OcclusionCuller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.i
+.PHONY : src/OcclusionCuller.cpp.i
+
+src/OcclusionCuller.s: src/OcclusionCuller.cpp.s
+.PHONY : src/OcclusionCuller.s
+
+# target to generate assembly for a file
+src/OcclusionCuller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.s
+.PHONY : src/OcclusionCuller.cpp.s
 
 src/Primitives.o: src/Primitives.cpp.o
 .PHONY : src/Primitives.o
@@ -526,12 +574,18 @@ help:
 	@echo "... include/imgui/imgui_widgets.o"
 	@echo "... include/imgui/imgui_widgets.i"
 	@echo "... include/imgui/imgui_widgets.s"
+	@echo "... src/FrustumCuller.o"
+	@echo "... src/FrustumCuller.i"
+	@echo "... src/FrustumCuller.s"
 	@echo "... src/MazeGenerator.o"
 	@echo "... src/MazeGenerator.i"
 	@echo "... src/MazeGenerator.s"
 	@echo "... src/Mesh.o"
 	@echo "... src/Mesh.i"
 	@echo "... src/Mesh.s"
+	@echo "... src/OcclusionCuller.o"
+	@echo "... src/OcclusionCuller.i"
+	@echo "... src/OcclusionCuller.s"
 	@echo "... src/Primitives.o"
 	@echo "... src/Primitives.i"
 	@echo "... src/Primitives.s"
