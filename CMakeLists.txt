@@ -32,6 +32,7 @@ add_executable(Project1
     src/MazeGenerator.cpp
     src/FrustumCuller.cpp
     src/OcclusionCuller.cpp
+    src/Player.cpp
 )
 target_include_directories(Project1 PRIVATE include)
 

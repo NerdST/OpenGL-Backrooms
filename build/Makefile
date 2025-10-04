@@ -443,6 +443,30 @@ src/OcclusionCuller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/OcclusionCuller.cpp.s
 .PHONY : src/OcclusionCuller.cpp.s
 
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/Primitives.o: src/Primitives.cpp.o
 .PHONY : src/Primitives.o
 
@@ -586,6 +610,9 @@ help:
 	@echo "... src/OcclusionCuller.o"
 	@echo "... src/OcclusionCuller.i"
 	@echo "... src/OcclusionCuller.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/Primitives.o"
 	@echo "... src/Primitives.i"
 	@echo "... src/Primitives.s"
